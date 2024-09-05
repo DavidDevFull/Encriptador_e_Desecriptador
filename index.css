@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --background_Blue:#031129;
+    --background_Blue_Of_course:#00173f;
+    --background_Blue_Of_course1:#001b4b;
+    --background_Cian:#2f6879;
+    --background_Cian_Dark:#26434d;
+
+    --font_Color:#F9F9F9;
+}
+body{
+    background: var(--background_Blue);
+}
+header h1{
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--font_Color);
+    margin: 30% auto 5%;
+    
+}
+header h1::after{
+    content: '|';
+    animation: animationBar 1s infinite;
+}
+@keyframes animationBar{
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.contain_Box_Txts{
+    height: 50dvh;
+
+    display: flex;
+    
+}
+.contain_Box_Txts textarea{ 
+
+    background: var(--background_Blue_Of_course);
+
+    margin: 2%;
+
+    color: var(--font_Color);
+    padding-left: 15px;
+    font-size: 1.3rem;
+
+
+    border: solid 1px rgb(0, 88, 52);
+    outline: none;
+}
+.contain_Box_Txts textarea:hover{
+    background: var(--background_Blue_Of_course1);
+}
+footer{
+    height: 45px;
+
+    display: flex;
+}
+footer button{
+    width: 47%;
+    margin: 0 auto;
+    color: var(--font_Color);
+
+    background-color: var(--background_Cian);
+    transition: .2s ease-in-out;
+}
+
+footer button:hover{
+    background: var(--background_Cian_Dark);
+    transition: .2s ease-in-out;
+}
